@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         webView.getSettings().setDomStorageEnabled(true);
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setDisplayZoomControls(false);
-        webView.loadUrl("http://127.0.0.1:8090");
+        webView.loadUrl("https://www.startpage.com/");
         webView.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView viewx, String urlx) {
                 if (urlx.contains("tas2580.net")) {
