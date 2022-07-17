@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
         webView.getSettings().setDomStorageEnabled(true);
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setDisplayZoomControls(false);
-        webView.loadUrl("https://www.startpage.com/");
+        webView.loadUrl("https://www.youtube.com/");
         webView.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView viewx, String urlx) {
-                if (urlx.contains("startpage.com")) {
+                if (urlx.contains("youtube.com")) {
                     viewx.loadUrl(urlx);
                 } else {
                     Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(urlx));
