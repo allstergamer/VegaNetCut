@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         webView.loadUrl("https://www.startpage.com/");
         webView.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView viewx, String urlx) {
-                if (urlx.contains("tas2580.net")) {
+                if (urlx.contains("startpage.com")) {
                     viewx.loadUrl(urlx);
                 } else {
                     Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(urlx));

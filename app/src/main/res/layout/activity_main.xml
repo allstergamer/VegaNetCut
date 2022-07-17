@@ -4,14 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
     tools:context=".MainActivity">
 
     <WebView
         android:id="@+id/mainWebView"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="350dp"
+        android:layout_height="700dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
